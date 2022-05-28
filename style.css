@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+    background-color: black;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  height:100%;
+}
+
+p {
+  position: absolute;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 1;
+  animation: fade ease-in-out infinite;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
